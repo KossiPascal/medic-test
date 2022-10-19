@@ -1,0 +1,15 @@
+git init
+npx license $(npm get init.license) -o "$(npm get init.author.name)" > LICENSE
+npx gitignore node
+npx covgen "$(npm get init.author.email)"
+
+  git config --global user.email "Vous@exemple.com"
+  git config --global user.name "Votre Nom"
+
+npm init -y
+git add -A
+git commit -m "Initial commit"
+
+
+
+npm install -g pkg
